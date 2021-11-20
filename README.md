@@ -11,4 +11,4 @@ That's why vanilla-merge is not based on boolean operations.
 ## EXAMPLE
 There are seven adjoining polygons as input so output will be single merged polygon.
 
-<img alt="img.png" height="500" src="./example_images/input.jpg" title="Input" width="400"/> <img alt="img.png" height="500" src="./example_images/output.jpg" title="Output" width="400"/>
+<img alt="img.png" height="400" src="./example_images/input.jpg" title="Input" width="350"/> <img alt="img.png" height="400" src="./example_images/output.jpg" title="Output" width="350"/>
