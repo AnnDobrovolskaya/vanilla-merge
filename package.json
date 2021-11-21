@@ -1,6 +1,6 @@
 {
   "name": "vanilla-merge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Polygon-clipping algorithm",
   "main": "./src/index.ts",
   "scripts": {
@@ -8,7 +8,11 @@
     "start:run": "nodemon dist/index.js",
     "start": "concurrently npm:start:*",
     "lint": "npx eslint . --ext .ts",
-    "lint:fix": "npx eslint ./src --fix"
+    "lint:fix": "npx eslint ./src --fix",
+    "release": "standard-version",
+    "release:patch": "npm run release -- --release-as patch",
+    "release:minor": "npm run release -- --release-as minor",
+    "release:major": "npm run release -- --release-as major"
   },
   "repository": {
     "type": "git",
@@ -31,6 +35,7 @@
     "@typescript-eslint/eslint-plugin": "^5.3.1",
     "@typescript-eslint/parser": "^5.3.1",
     "eslint": "^8.2.0",
+    "standard-version": "^9.3.2",
     "typescript": "^4.4.4",
     "uuidv4": "^6.2.12"
   }
