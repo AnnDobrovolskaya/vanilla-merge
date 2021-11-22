@@ -1,10 +1,23 @@
 {
-  "name": "vanilla-merge",
-  "version": "1.0.1",
+  "name": "@bigfloppa/vanilla-merge",
+  "version": "1.0.4",
   "description": "Polygon-clipping algorithm",
-  "main": "./src/index.ts",
+  "main": "dist/js/index.js",
+  "module": "dist/es/index.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/es/index.js",
+      "require": "./dist/js/index.js"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "start:build": "npx tsc -w",
+    "build:es": "tsc --outDir dist/es --module esnext --declaration false && echo '{\"type\":\"module\"}' > dist/es/package.json",
+    "build:js": "tsc",
     "start:run": "nodemon dist/index.js",
     "start": "concurrently npm:start:*",
     "lint": "npx eslint . --ext .ts",
@@ -25,18 +38,21 @@
   },
   "homepage": "https://github.com/AnnDobrovolskaya/vanilla-merge#readme",
   "dependencies": {
-    "concurrently": "^6.3.0",
-    "lodash": "^4.17.21",
-    "nodemon": "^2.0.14"
-  },
-  "devDependencies": {
     "@turf/turf": "^6.5.0",
     "@types/lodash": "^4.14.176",
+    "lodash": "^4.17.21",
+    "uuidv4": "^6.2.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14",
+    "concurrently": "^6.3.0",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
     "@typescript-eslint/parser": "^5.3.1",
     "eslint": "^8.2.0",
     "standard-version": "^9.3.2",
-    "typescript": "^4.4.4",
-    "uuidv4": "^6.2.12"
-  }
+    "typescript": "^4.4.4"
+  },
+  "keywords": [
+    "polygon-merge"
+  ]
 }

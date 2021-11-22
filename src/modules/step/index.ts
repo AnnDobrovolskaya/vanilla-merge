@@ -1,6 +1,5 @@
 import { isEmpty } from 'lodash';
-import { Polygons } from '../../types/Polygon';
-import { Polygon } from '../../types/Polygon';
+import { Polygon, Polygons } from '../../types/Polygon';
 
 type Pair = Array<{ secondOperand: Polygon , current: Polygon }>
 
