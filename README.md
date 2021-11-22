@@ -83,4 +83,4 @@ That's why vanilla-merge is not based on boolean operations.
 There are seven adjoining polygons as input so output will be single merged polygon.
 
 <img alt="img.png" height="400" src="./example_images/input.jpg" title="Input" width="350"/> <img alt="img.png" height="400" src="./example_images/output.jpg" title="Output" width="350"/>
-<img alt="img.png" height="400" src="./example_images/kyiv-input.jpg" title="Input" width="350"/> <img alt="img.png" height="400" src="./example_images/kyiv-output.jpg" title="Output" width="350"/>
+<img alt="img.png" src="./example_images/kyiv-input.jpg" title="Input"/> <img alt="img.png" src="./example_images/kyiv-output.jpg" title="Output"/>
