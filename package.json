@@ -1,6 +1,6 @@
 {
   "name": "@bigfloppa/vanilla-merge",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Polygon-clipping algorithm",
   "main": "dist/js/index.js",
   "module": "dist/es/index.js",
